@@ -35,12 +35,12 @@ Every character in S is either + or -.
 **Large dataset**: 2 ≤ length of S ≤ 1000.
 
 ### Sample
-Input           Output 
- 
-3           
----+-++- 3      Case #1: 3
-+++++ 4         Case #2: 0
--+-+- 4         Case #3: IMPOSSIBLE
+Input    |       Output
+--- | --- 
+3            |
+---+-++- 3   |   Case #1: 3
++++++ 4      |   Case #2: 0
+-+-+- 4      |   Case #3: IMPOSSIBLE
 
 
 
