@@ -18,7 +18,7 @@ Given the current state of the pancakes, calculate the minimum number of uses of
 
 ### Input
 
-The first line of the input gives the number of test cases, T. T test cases follow. Each consists of one line with a string S and an integer K. S represents the row of pancakes: each of its characters is either + (which represents a pancake that is initially happy side up) or - (which represents a pancake that is initially blank side up).
+The first line of the input gives the number of test cases, *T*. *T* test cases follow. Each consists of one line with a string *S* and an integer *K*. *S* represents the row of pancakes: each of its characters is either + (which represents a pancake that is initially happy side up) or - (which represents a pancake that is initially blank side up).
 
 ### Output
 
@@ -26,13 +26,13 @@ For each test case, output one line containing Case #x: y, where x is the test c
 
 ### Limits
 
-1 ≤ T ≤ 100.
-Every character in S is either + or -.
-2 ≤ K ≤ length of S.
+1 ≤ *T* ≤ 100.
+Every character in *S* is either + or -.
+2 ≤ *K* ≤ length of *S*.
 
-**Small dataset**: 2 ≤ length of S ≤ 10.
+**Small dataset**: 2 ≤ length of *S* ≤ 10.
 
-**Large dataset**: 2 ≤ length of S ≤ 1000.
+**Large dataset**: 2 ≤ length of *S* ≤ 1000.
 
 ### Sample
 Input    |       Output
@@ -41,6 +41,43 @@ Input    |       Output
 ---+-++- 3   |   Case #1: 3
 +++++ 4      |   Case #2: 0
 -+-+- 4      |   Case #3: IMPOSSIBLE
+
+
+## B - Tidy Numbers
+
+### Problem
+
+Tatiana likes to keep things tidy. Her toys are sorted from smallest to largest, her pencils are sorted from shortest to longest and her computers from oldest to newest. One day, when practicing her counting skills, she noticed that some integers, when written in base 10 with no leading zeroes, have their digits sorted in non-decreasing order. Some examples of this are 8, 123, 555, and 224488. She decided to call these numbers tidy. Numbers that do not have this property, like 20, 321, 495 and 999990, are not tidy.
+
+She just finished counting all positive integers in ascending order from 1 to *N*. What was the last tidy number she counted?
+
+### Input
+
+The first line of the input gives the number of test cases, *T*. *T* lines follow. Each line describes a test case with a single integer *N*, the last number counted by Tatiana.
+
+### Output
+
+For each test case, output one line containing Case #x: y, where x is the test case number (starting from 1) and y is the last tidy number counted by Tatiana.
+
+### Limits
+
+1 ≤ *T* ≤ 100.
+
+**Small dataset**: 1 ≤ *N* ≤ 1000.
+**Large dataset**: 1 ≤ *N* ≤ 10^18.
+
+
+### Sample
+
+Input | Output 
+4 |
+132 | Case #1: 129
+1000 | Case #2: 999
+7 | Case #3: 7
+111111111111111110 | Case #4: 99999999999999999
+
+
+*Note that the last sample case would not appear in the Small dataset.*
 
 
 
