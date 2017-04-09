@@ -30,11 +30,9 @@ For each test case, output one line containing Case #x: y, where x is the test c
 Every character in S is either + or -.
 2 ≤ K ≤ length of S.
 
-**Small dataset**
-2 ≤ length of S ≤ 10.
+**Small dataset**: 2 ≤ length of S ≤ 10.
 
-**Large dataset**
-2 ≤ length of S ≤ 1000.
+**Large dataset**: 2 ≤ length of S ≤ 1000.
 
 ### Sample
 Input           Output 
