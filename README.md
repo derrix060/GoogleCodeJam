@@ -70,7 +70,8 @@ For each test case, output one line containing Case #x: y, where x is the test c
 ### Sample
 
 Input | Output 
-4 |
+--- | --- 
+4 |  
 132 | Case #1: 129
 1000 | Case #2: 999
 7 | Case #3: 7
