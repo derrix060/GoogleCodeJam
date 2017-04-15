@@ -8,10 +8,6 @@ def minR(r):
         r[pos] = float(i) * 0.9
         pos += 1
 
-def truncate(num):
-    bef, aft = str(num).split('.')
-    return int(bef)
-
 def check_pak(pak, lim):
     for p in range(len(pak)):
         for l in range(len(lim)):
@@ -24,7 +20,7 @@ def set_num_servings(pak, lim):
     num_paks = []
 
     for i in range(len(pak)):
-        num_paks.append(truncate(float(pak[i])/float(lim[i])))
+        num_paks.append(float(pak[i]) // float(lim[i]))
 
     print('min: {}, num_paks: {}'.format(str(min(num_paks)), str(num_paks)))
     return min(num_paks)
