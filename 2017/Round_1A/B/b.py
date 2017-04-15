@@ -28,8 +28,11 @@ def set_num_servings(pak, lim):
 
 def answer():
 
-    n, p = [int (s) for s in input().split(' ')]
-    r = input().split(' ')
+    #old: n, p = [int (s) for s in input().split(' ')]
+    n, p = map(int, input().split())
+    #old: r = input().split()
+    #convert to int
+    r = list(map(int, input().split()))
     minR(r)
     print('n: {}, p: {}, r: {}'.format(str(n), str(p), str(r)))
 
