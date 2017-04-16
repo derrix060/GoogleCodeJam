@@ -1,42 +1,41 @@
 tc = int(input())
 
 for t in range(1, tc+1):
-    print("Case #%d: "%t, end = "")
-    n, p = map(int, input().split())
-    reqs = list(map(int, input().split()))
-    pls = []
-    for _ in range(n):
-        pls.append(list(map(int, input().split())))
-    events = []
-    for i in range(n):
-        for j in range(p):
-            u = pls[i][j]
-            req = reqs[i]
-            up = (10 * u) // (9 * req)
-            down = (10 * u + 11 * req - 1) // (11 * req)
+    num_ingreds, num_packs = map(int, input().split())
+    receita = list(map(int, input().split()))
+    compra = []
+    for _ in range(num_ingreds):
+        compra.append(list(map(int, input().split())))
+    #print('compra: ' + str(compra))
+    qtde_limite = []
+    for ingrediente in range(num_ingreds):
+        for pacote in range(num_packs):
+            units = compra[ingrediente][pacote]
+            rec = receita[ingrediente]
+            up = (10 * units) // (9 * rec)
+            down = (10 * units + 11 * rec - 1) // (11 * rec)
             if down == 0: down = 1
             if up < down: continue
-            events.append((down, False, i, u, j))
-            events.append((up, True, i, u, j))
-    events.sort()
-    #print(events)
+            qtde_limite.append((down, False, ingrediente, units, pacote))
+            qtde_limite.append((up, True, ingrediente, units, pacote))
+    qtde_limite.sort()
+    print('qtde_limite: ' + str(qtde_limite))
     cnt = 0
-    counts = [[] for _ in range(n)]
-    remv = [0] * n
-    for (bd, ev, i, yy, j) in events:
+    counts = [[] for _ in range(num_ingreds)]
+    remv = [0] * num_ingreds
+    for (qtde, isUp, ingrediente, units, pacote) in qtde_limite:
         #print(counts, remv)
-        if ev:
-            if remv[i] > 0:
-                remv[i] -= 1
-            #elif yy in counts[i]:
+        if isUp:
+            if remv[ingrediente] > 0:
+                remv[ingrediente] -= 1
             else:
-                counts[i].remove(yy)
+                counts[ingrediente].remove(units)
         else:
-            counts[i].append(yy)
+            counts[ingrediente].append(units)
             if all(counts):
                 cnt += 1
-                for ii in range(n):
-                    counts[ii].remove(min(counts[ii]))
-                    remv[ii] += 1
-    print(cnt)
-    
+                for ingr_idx in range(num_ingreds):
+                    counts[ingr_idx].remove(min(counts[ingr_idx]))
+                    remv[ingr_idx] += 1
+
+    print("Case #%{}: {}".format(str(t), str(cnt)))

@@ -1,11 +1,11 @@
 
 def column(matrix,i):
-    return [row[i] for row in matrix]
+    return [int(row[i]) for row in matrix]
 
-def minR(r):
+def set_limits(r):
     pos = 0
     for i in r:
-        r[pos] = float(i) * 0.9
+        r[pos] = (float(i) * 0.9, float(i) * 1.1)
         pos += 1
 
 def check_pak(pak, lim):
@@ -16,47 +16,75 @@ def check_pak(pak, lim):
 
     return True
 
-def set_num_servings(pak, lim):
-    num_paks = []
+def possibles_packages(element, lim):
+    rtn = []
 
+    start = element // lim
+
+    # Superior from start
+    cont = True
+    actual = start
+    while cont:
+        ratio = element / (actual * lim)
+        if ratio >= 0.9 and ratio <= 1.1:
+            rtn.append(actual)
+            actual += 1
+        else:
+            cont = False
+    
+    # Inferior from start
+    cont = True
+    actual = start - 1
+    while cont and actual != 0:
+        ratio = element / (actual * lim)
+        if ratio >= 0.9 and ratio <= 1.1:
+            rtn.append(actual)
+            actual -= 1
+        else:
+            cont = False
+
+    
+    return rtn
+
+
+
+def can_use_package(pak, lim):
+    candidates_for_servings_per_item = []
+
+
+    #for each item in package
     for i in range(len(pak)):
-        num_paks.append(float(pak[i]) // float(lim[i]))
+        #get (max,min) servings
+        possibles = possibles_packages(pak[i], lim[i])
+        if len(possibles) == 0:
+            return 0
+        candidates_for_servings_per_item.append((pak[i], possibles))
+    
+    print('candidates_for_servings_per_item for item: {}'.format(str(candidates_for_servings_per_item)))
 
-    print('min: {}, num_paks: {}'.format(str(min(num_paks)), str(num_paks)))
-    return min(num_paks)
+    
+
+    return 0
 
 
 def answer():
 
-    #old: n, p = [int (s) for s in input().split(' ')]
-    n, p = map(int, input().split())
-    #old: r = input().split()
-    #convert to int
-    r = list(map(int, input().split()))
-    minR(r)
-    print('n: {}, p: {}, r: {}'.format(str(n), str(p), str(r)))
+    num_ingred, num_pack = map(int, input().split())
+    receita = list(map(int, input().split()))
 
     mat = []
-    for i in range(n):
+    for i in range(num_ingred):
         q = input().split(' ')
         mat.append(q)
     
-    pak = []
-    result = 0
-    for i in range(p):
-        pak.append(column(mat,i))
-    
-    num_servings = set_num_servings(pak[0], r)
-
-    if num_servings == 0:
-        return str(0)
+    pakages = []
+    validPackages = 0
+    for i in range(num_pack):
+        pakages.append(column(mat,i))
+        validPackages += can_use_package(pakages[i], receita)
 
 
-    
-    
-    print('pakages: ' + str(pak))
-
-    return str(1)
+    return str(validPackages)
 
 times = int(input())
 
