@@ -55,9 +55,11 @@ def min_max_servings(pak, lim):
     return (sorted(possibles))
 
 def hasElement(listOfList, element):
-    for listIdx in range(listOfList):
-        if element in listOfList[listIdx]:
-            return (True,listIdx)
+    listIdx = -1
+    for _list in listOfList:
+        listIdx += 1
+        if element in _list[1]:
+            return (True, listIdx)
     
     return (False,0)
 
@@ -78,12 +80,45 @@ def answer():
     for ingr in range(num_ingred):
         candidates[ingr] = []
         for pak in range(num_pack):
-            candidates[ingr].append(min_max_servings(mat[ingr][pak], receita[ingr]))
+            candidates[ingr].append((True, min_max_servings(mat[ingr][pak], receita[ingr])))
         
         candidates[ingr] = sorted(candidates[ingr])
-
-    
     print('candidates: {}'.format(str(candidates)))
+
+    # Count number of right packages where can be formed
+    #starting with the min number to max.
+    answ = 0
+    for pack in range(num_pack):
+        servings = candidates[0][pack][1]
+
+        print('servings: ' + str(servings))
+        
+        for serv in servings:
+            has = True
+            foundIdx = [0]
+            for ingr in range(1, num_ingred):
+                el = hasElement(candidates[ingr], serv)
+                print('el: ' + str(serv))
+                if el[0]:
+                    foundIdx.append(el[1])
+                else:
+                    has = False
+                    break
+
+        
+            # if found serv in every ingredient
+            if has:
+                answ += 1
+                print('passei')
+            else:
+                print('else passei')
+
+
+
+
+
+        
+
 
  
     return str(1)
