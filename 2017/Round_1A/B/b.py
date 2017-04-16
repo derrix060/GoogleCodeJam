@@ -67,10 +67,13 @@ def answer():
     receita = list(map(int, input().split()))
 
     mat = []
+    # Get materials
     for ingr in range(num_ingred):
         mat.append(list(map(int, input().split())))
 
-
+    # Calculate how much servings each item for each
+    # ingredient can do and store in an dictionary,
+    # where key is the ingr number.
     candidates = {}
     for ingr in range(num_ingred):
         candidates[ingr] = []
