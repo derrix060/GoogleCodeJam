@@ -66,8 +66,7 @@ def answer():
 
     mat = []
     for ingr in range(num_ingred):
-        q = list(map(int, input().split()))
-        mat.append(q)
+        mat.append(list(map(int, input().split())))
 
 
     candidates = {}
