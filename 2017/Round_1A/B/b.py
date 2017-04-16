@@ -48,23 +48,15 @@ def possibles_packages(element, lim):
 
 
 
-def can_use_package(pak, lim):
-    candidates_for_servings_per_item = []
-
-
-    #for each item in package
-    for i in range(len(pak)):
-        #get (max,min) servings
-        possibles = possibles_packages(pak[i], lim[i])
-        if len(possibles) == 0:
-            return 0
-        candidates_for_servings_per_item.append((pak[i], possibles))
+def min_max_servings(pak, lim):
     
-    print('candidates_for_servings_per_item for item: {}'.format(str(candidates_for_servings_per_item)))
+    possibles = possibles_packages(pak, lim)
+    if len(possibles) == 0:
+        return 0
 
-    
+    #print('pak: {}, lim: {}, possibles: {}'.format(str(pak), str(lim), str(sorted(possibles))))
 
-    return 0
+    return (sorted(possibles))
 
 
 def answer():
@@ -73,18 +65,24 @@ def answer():
     receita = list(map(int, input().split()))
 
     mat = []
-    for i in range(num_ingred):
-        q = input().split(' ')
+    for ingr in range(num_ingred):
+        q = list(map(int, input().split()))
         mat.append(q)
+
+
+    candidates = {}
+    for ingr in range(num_ingred):
+        candidates[ingr] = []
+        for pak in range(num_pack):
+            candidates[ingr].append(min_max_servings(mat[ingr][pak], receita[ingr]))
+        
+        candidates[ingr] = sorted(candidates[ingr])
+
     
-    pakages = []
-    validPackages = 0
-    for i in range(num_pack):
-        pakages.append(column(mat,i))
-        validPackages += can_use_package(pakages[i], receita)
+    print('candidates: {}'.format(str(candidates)))
 
-
-    return str(validPackages)
+ 
+    return str(1)
 
 times = int(input())
 
