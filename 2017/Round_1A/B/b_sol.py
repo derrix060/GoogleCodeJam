@@ -23,19 +23,32 @@ for t in range(1, tc+1):
     cnt = 0
     counts = [[] for _ in range(num_ingreds)]
     remv = [0] * num_ingreds
+
+
     for (qtde, isUp, ingrediente, units, pacote) in qtde_limite:
-        #print(counts, remv)
+        
         if isUp:
+            
+            print('counts: ' + str(counts))
+            print('remv: ' + str(remv))
             if remv[ingrediente] > 0:
                 remv[ingrediente] -= 1
             else:
+                # unused
                 counts[ingrediente].remove(units)
+        
         else:
             counts[ingrediente].append(units)
+
+            print('counts: ' + str(counts))
+            print('remv: ' + str(remv))
             if all(counts):
+                # match
                 cnt += 1
                 for ingr_idx in range(num_ingreds):
                     counts[ingr_idx].remove(min(counts[ingr_idx]))
                     remv[ingr_idx] += 1
 
-    print("Case #%{}: {}".format(str(t), str(cnt)))
+        
+
+    print("Case #{}: {}".format(str(t), str(cnt)))
