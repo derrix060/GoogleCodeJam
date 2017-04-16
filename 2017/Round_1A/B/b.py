@@ -1,7 +1,3 @@
-
-def column(matrix,i):
-    return [int(row[i]) for row in matrix]
-
 def set_limits(r):
     pos = 0
     for i in r:
