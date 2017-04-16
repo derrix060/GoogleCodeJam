@@ -54,6 +54,12 @@ def min_max_servings(pak, lim):
 
     return (sorted(possibles))
 
+def hasElement(listOfList, element):
+    for listIdx in range(listOfList):
+        if element in listOfList[listIdx]:
+            return (True,listIdx)
+    
+    return (False,0)
 
 def answer():
 
