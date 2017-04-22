@@ -2,11 +2,6 @@
 
 using namespace std;
 
-#define si(a)				scanf("%d",&a)
-#define sl(a)				scanf("%lld",&a)
-#define pi(a)				printf("%d\n",a)
-#define pl(a)				printf("%lld\n",a)
- 
 typedef long long			ll;
 typedef vector<int>			vi;
 typedef pair<int, int>		ii;
@@ -22,17 +17,20 @@ typedef vector<ii>			vii;
 
 int main(){
     fast_io;
+    //freopen("input_.in","r",stdin);
+	//freopen("output_.out","w",stdout);
 
     int test_case;
 
-    si(test_case);
+    cin >> test_case;
 
     forall(i,1,test_case+1){
 
-        printf("Case #%d: ", test_case);
+
+        cout << "Case #" << i << ": ";
+
+        cout << "\n";
     }
-    //freopen("input.in","r",stdin);
-	//freopen("output.out","w",stdout);
 
     
     return 0;
