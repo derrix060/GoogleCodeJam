@@ -22,7 +22,6 @@ typedef vector<ii>			vii;
 
 
 /*
-    UNIQUE
     
     Z - ZERO
     W - TWO
@@ -38,33 +37,48 @@ typedef vector<ii>			vii;
     z, w, u, x, g, h, f, o, s, i
 */
 
-void clear_words(map<char, int>* words){
-    words['Z']
-}
 
 int main(){
     fast_io;
+
+
+    freopen("A-large-practice.in","r",stdin);
+	freopen("A-large-practice.out","w",stdout);
+
     map<char, int> words;
     vi numbers;
     int number;
-    char ch[] = {'Z, W, U, X, G, H, F, O, S, I'};
-    map<char, char> w_numb;
-
-    w_numb['Z'] = ['Z','E', 'R', 'O'];
-    w_numb['W'] = ['T', 'W','O'];
-    w_numb['U'] = ['F','O', 'U', 'R'];
-    w_numb['X'] = ['S', 'I', 'X'];
-    w_numb['G'] = ['E', 'I', 'G', 'H', 'T'];
-    w_numb['H'] = ['T', 'H', 'R', 'E', 'E'];
-    w_numb['F'] = ['F', 'I', 'V', 'E'];
-    w_numb['O'] = ['O', 'N', 'E'];
-    w_numb['S'] = ['S', 'E', 'V', 'E', 'N'];
-    w_numb['I'] = ['N', 'I', 'N', 'E'];
-
+    char ch[] = {'Z', 'W', 'U', 'X', 'G', 'H', 'F', 'O', 'S', 'I'};
+    map<char, string> w_numb;
+    map<int, int> numb_corresp;
+    char c, cc;
     int test_case;
     string word;
+    string s;
 
-    si(test_case);
+    w_numb['Z'] = "ZERO";
+    numb_corresp[0] = 0;
+    w_numb['W'] = "TWO";
+    numb_corresp[1] = 2;
+    w_numb['U'] = "FOUR";
+    numb_corresp[2] = 4;
+    w_numb['X'] = "SIX";
+    numb_corresp[3] = 6;
+    w_numb['G'] = "EIGHT";
+    numb_corresp[4] = 8;
+    w_numb['H'] = "THREE";
+    numb_corresp[5] = 3;
+    w_numb['F'] = "FIVE";
+    numb_corresp[6] = 5;
+    w_numb['O'] = "ONE";
+    numb_corresp[7] = 1;
+    w_numb['S'] = "SEVEN";
+    numb_corresp[8] = 7;
+    w_numb['I'] = "NINE";
+    numb_corresp[9] = 9;
+    
+
+    cin >> test_case;
 
     forall(i,1,test_case+1){
         cin >> word;
@@ -76,17 +90,27 @@ int main(){
         }
 
         forall(j, 0, 10){
-            while(word.find(ch[j]) != npos){
-
+            c = ch[j];
+            s = w_numb[c];
+            while(words[c] > 0){
+                numbers.push_back(numb_corresp[j]);
+                forall(k, 0, w_numb[c].size()){
+                    cc = w_numb[c][k];
+                    words[cc]--;
+                }
             }
         }
 
+        sort(numbers.begin(), numbers.end());
 
 
-        printf("Case #%d: %d", test_case, number);
+        cout << "Case #" << i << ": ";
+
+        forall(j, 0, numbers.size()){
+            cout << "" << numbers[j];
+        }
+        cout << "\n";
     }
-    //freopen("input.in","r",stdin);
-	//freopen("output.out","w",stdout);
 
     
     return 0;
