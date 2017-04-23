@@ -22,36 +22,20 @@ int main(){
 
     int num_horses, test_case;
     double max_vel, destination_pos, pos, vel, timee;
-    vector<double> times;
 
     cin >> test_case;
 
     forall(i,1,test_case+1){
-        times.clear();
-
-        //scanf("%f %d", &destination_pos, &num_horses);
-
+        timee = 0;
         cin >> destination_pos >> num_horses;
 
         forall(j, 0, num_horses){
-            //scanf("%f %f", &pos, &vel);
             cin >> pos >> vel;
-            timee = (destination_pos - pos)/vel;
-            //printf("timee: %f, destination_pos: %f, pos: %f, vel: %f\n", timee, destination_pos, pos, vel);
-            times.push_back(timee);
+            timee = max((destination_pos - pos)/vel, timee);
         }
 
-        sort(times.begin(), times.end(), greater<double>());
-        timee = times[0];
-
         max_vel = destination_pos/timee;
-        //printf("max_vel: %f, destination_pos: %f, timee: %f\n", max_vel, destination_pos, timee);
-
         printf("Case #%d: %f\n", i, max_vel);
-
-        //cout << "Case #" << i << ": ";
-        //cout << max_vel << "\n";
-        //cout << setprecision(6) << max_vel << "\n";
     }
 
     
