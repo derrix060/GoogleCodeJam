@@ -15,6 +15,10 @@ typedef vector<ii>			vii;
 #define forr(it,container)  for(auto it=container.begin(); it!=container.end(); it++)
 #define w(t)				int t;si(t);while(t--)
 
+void run(){
+
+}
+
 int main(){
     fast_io;
     //freopen("input_.in","r",stdin);
@@ -28,7 +32,7 @@ int main(){
 
 
         cout << "Case #" << i << ": ";
-
+        run();
         cout << "\n";
     }
 
