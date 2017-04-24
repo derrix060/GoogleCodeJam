@@ -9,7 +9,7 @@
 using namespace std;
 typedef long long ll;
 
-ifstream fin ("B.in");
+ifstream fin ("input_big.in");
 ofstream fout ("B.out");
 
 string rval = "RBYGOV";

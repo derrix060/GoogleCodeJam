@@ -58,11 +58,13 @@ string small_answ(map<char, int> *un, int answ_size,  pair<char,int> fst, char f
     pair<char,int> actual;
 
     if (fst_c == 'z'){
-        fst = next_small(un, fst, fst_c);
-        fst_c = fst.first;
+        actual = next_small(un, fst, fst_c);
+        fst_c = actual.first;
+    }else{
+        actual = fst;
     }
     
-    //cout << "fst: " << fst_c << "\n";
+    //cout << "actual: " << actual.first << ", " << actual.second << " | fst_c: " << fst_c << "\n";
 
     while (rtn.size() != answ_size && actual.first != 'Z'){
         actual = next_small(un, actual, fst_c);
@@ -79,15 +81,15 @@ string small_answ(map<char, int> *un, int answ_size,  pair<char,int> fst, char f
 bool exist_answ(map<char, int> *un){
     int qtde, qt;
 
-    qtde = (*un)['O'] * 2;
+    qtde = (*un)['O'];
     qt = (*un)['B'];
     if (qtde > qt) return false;
 
-    qtde = (*un)['G'] * 2;
+    qtde = (*un)['G'];
     qt = (*un)['R'];
     if (qtde > qt) return false;
 
-    qtde = (*un)['V'] * 2;
+    qtde = (*un)['V'];
     qt = (*un)['Y'];
     if (qtde > qt) return false;
 
@@ -97,16 +99,19 @@ bool exist_answ(map<char, int> *un){
 
 bool big_continue(map<char, int> *un){
     //print_map(un);
-    if ((*un)['O'] > 0 || (*un)['G'] > 0 || (*un)['V'] > 0)
+    if ((*un)['V'] > 0 || (*un)['G'] > 0 || (*un)['O'] > 0)
         return true;
     else
         return false;
 }
 
 char next_big(char actual, map<char,int> *un){
-    char bigs[3] = {'B', 'G', 'O'};
+    char bigs[3] = {'V', 'G', 'O'};
     char c;
     int maior = 0;
+
+    if ((*un)[actual] > 0)
+        return actual;
 
     forall(i, 0, 3){
         if (bigs[i] != actual && (*un)[bigs[i]] > maior){
@@ -126,7 +131,8 @@ string big_answ(map<char,int> *un, int answ_size){
     string rtn = "";
     string smll = "";
     string tmp;
-    char c = 'O';
+    char c = 'z';
+    char c_ant;
     char c_al;
     int cur = 0;
     pair<char, int> fst;
@@ -146,7 +152,9 @@ string big_answ(map<char,int> *un, int answ_size){
     }
 
     while(big_continue(un)){
-        c = next_big(c, un);
+        c_ant = c;
+        c = next_big(c_ant, un);
+
         if (c == 'n') break;
 
         c_al = allowed[c];
@@ -156,25 +164,37 @@ string big_answ(map<char,int> *un, int answ_size){
             fst_c = c_al;
         }
         
-        tmp = c_al;
-        rtn.append(tmp);
+
+        if (c != c_ant){
+            tmp = c_al;
+            rtn.append(tmp);
+            cur ++;
+            (*un)[c_al] --;
+        }
+        
         tmp = c;
         rtn.append(tmp);
+        cur ++;
+        if (cur == answ_size) {
+            if (rtn[0] != c_al){
+                return imp;
+            }
+            break;
+        }
         tmp = c_al;
         rtn.append(tmp);
-
+        cur ++;
         (*un)[c] --;
-        (*un)[c_al] -= 2;
+        (*un)[c_al] --;
 
-        cur += 3;
-
-        cout << "c: " << c << ", c_al: " << c_al << "\n";
+        //cout << "c: " << c << ", c_al: " << c_al << "\n";
         cout << rtn << "\n\n";
     }
+
     new_size = answ_size - cur;
-    //cout << "new_size: " << new_size << "\n";
 
     fst = make_pair(c_al, (*un)[c_al]);
+    //cout << "fst: " << fst.first << ", " << fst.second << "\n";
     
     smll = small_answ(un, new_size, fst, fst_c);
 
@@ -187,8 +207,8 @@ string big_answ(map<char,int> *un, int answ_size){
 
 int main(){
     fast_io;
-    //freopen("input_small.in","r",stdin);
-	//freopen("output_small.out","w",stdout);
+    //freopen("input_big.in","r",stdin);
+	//freopen("output_big.out","w",stdout);
 
     map<char, int> un;
     pair<char,int> tmp;
@@ -207,7 +227,7 @@ int main(){
         //N, R, O, Y, G, B, and V.
         cin >> un_count >> un['R'] >> un['O'] >> un['Y'] >> un['G'] >> un['B'] >> un['V'];
 
-        if (un['O'] == un['G'] == un['V'] == 0){
+        if (un['O'] == 0 && un['G'] == 0 && un['V'] == 0){
             tmp = make_pair('z', -1);
             answ = small_answ(&un, un_count, tmp, 'z');
         }
