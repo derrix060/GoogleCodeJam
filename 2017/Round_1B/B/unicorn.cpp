@@ -16,7 +16,13 @@ typedef vector<ii>			vii;
 #define w(t)				int t;si(t);while(t--)
 
 
+string imp = "IMPOSSIBLE";
 
+void print_map(map<char, int> *un){ 
+    for(map<char,int>::iterator it = (*un).begin(); it != (*un).end(); it++){ 
+        cout << it->first << ", " << it->second << "\n"; 
+    } 
+} 
 
 void clear_map(map<char, int> *un){
     for(map<char,int>::iterator it = (*un).begin(); it != (*un).end(); it++){
