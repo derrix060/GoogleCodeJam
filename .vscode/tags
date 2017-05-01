@@ -1,0 +1,185 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BinaryTree	../2017/qualification/bathroom/binaryTree.py	/^class BinaryTree:$/;"	kind:class	line:7
+Hi	../2017/Round_1A/C/c_sol.py	/^                    Hi = Hd - Ak$/;"	kind:variable	line:61
+Hi	../2017/Round_1A/C/c_sol.py	/^                Hi = Hd - Ak$/;"	kind:variable	line:56
+Hi	../2017/Round_1A/C/c_sol.py	/^        Hi = Hd$/;"	kind:variable	line:42
+Hi	../2017/Round_1A/C/c_sol.py	/^    Hi = Hd$/;"	kind:variable	line:26
+K	../2017/qualification/solution/python-kamyu104/bathroom-stalls.py	/^        K = (K+1)\/\/2$/;"	kind:variable	line:36
+N	../2017/qualification/solution/python-kamyu104/bathroom-stalls.py	/^        N = M if K % 2 else m$/;"	kind:variable	line:35
+Node	../2017/qualification/bathroom/binTree2.py	/^class Node(object):$/;"	kind:class	line:1
+Node	../2017/qualification/bathroom/binaryTree.py	/^class Node:$/;"	kind:class	line:1
+PreOrder	../2017/qualification/bathroom/binaryTree.py	/^    def PreOrder(self,root):$/;"	kind:member	line:28
+R	../2017/Round_1A/C/c_sol.py	/^R = 100$/;"	kind:variable	line:6
+__init__	../2017/qualification/bathroom/binTree2.py	/^    def __init__(self, data):$/;"	kind:member	line:5
+__init__	../2017/qualification/bathroom/binaryTree.py	/^    def __init__(self):$/;"	kind:member	line:9
+__init__	../2017/qualification/bathroom/binaryTree.py	/^    def __init__(self,data):$/;"	kind:member	line:2
+__repr__	../2017/qualification/bathroom/binTree2.py	/^    def __repr__(self):$/;"	kind:member	line:10
+a	../2017/Round_1A/C/c_sol.py	/^    a = (Hk + b * B + Ad - 1) \/\/ (b * B + Ad)$/;"	kind:variable	line:24
+a	../2017/qualification/bathroom/binaryTree.py	/^a = BinaryTree()$/;"	kind:variable	line:51
+a.py	../2017/Round_1A/A/a.py	1;"	kind:file	line:1
+a_sol.py	../2017/Round_1A/A/a_sol.py	1;"	kind:file	line:1
+ab	../2017/Round_1A/C/c_sol.py	/^    ab = a + b$/;"	kind:variable	line:25
+add_pares	../2016/Round_1A/C-BFFs/bff.py	/^def add_pares(visited, pares):$/;"	kind:function	line:11
+answer	../2016/Round_1A/B-RankFile/rankFile.py	/^def answer():$/;"	kind:function	line:2
+answer	../2017/Round_1A/A/a.py	/^def answer():$/;"	kind:function	line:49
+answer	../2017/Round_1A/B/b.py	/^def answer():$/;"	kind:function	line:66
+answer	../2017/Round_1A/C/c.py	/^def answer():$/;"	kind:function	line:1
+answer	../2017/qualification/bathroom/bathroom.py	/^    answer = solver (stalls, people) $/;"	kind:variable	line:37
+answer	../2017/qualification/pankake/pankake.py	/^def answer(row, flipperSize):$/;"	kind:function	line:18
+area	../2017/Round_1C/A/syrup.py	/^def area(radius, height):$/;"	kind:function	line:3
+b	../2017/Round_1A/C/c_sol.py	/^                b = b1$/;"	kind:variable	line:21
+b	../2017/Round_1A/C/c_sol.py	/^                b = b2$/;"	kind:variable	line:23
+b	../2017/Round_1A/C/c_sol.py	/^            b = 0$/;"	kind:variable	line:16
+b	../2017/Round_1A/C/c_sol.py	/^        b = 0$/;"	kind:variable	line:12
+b.py	../2017/Round_1A/B/b.py	1;"	kind:file	line:1
+b1	../2017/Round_1A/C/c_sol.py	/^            b1 = int(z)$/;"	kind:variable	line:18
+b2	../2017/Round_1A/C/c_sol.py	/^            b2 = b1 + 1$/;"	kind:variable	line:19
+b_sol.py	../2017/Round_1A/B/b_sol.py	1;"	kind:file	line:1
+b_sol_bak.py	../2017/Round_1A/B/b_sol_bak.py	1;"	kind:file	line:1
+bathroom-stalls.py	../2017/qualification/solution/python-kamyu104/bathroom-stalls.py	1;"	kind:file	line:1
+bathroom.py	../2017/qualification/bathroom/bathroom.py	1;"	kind:file	line:1
+bathroom_stalls	../2017/qualification/solution/python-kamyu104/bathroom-stalls.py	/^def bathroom_stalls():$/;"	kind:function	line:14
+bathroom_stalls	../2017/qualification/solution/python-kamyu104/bathroom-stalls.py	/^def bathroom_stalls():$/;"	kind:function	line:23
+bff.py	../2016/Round_1A/C-BFFs/bff.py	1;"	kind:file	line:1
+bff_anw.py	../2016/Round_1A/C-BFFs/bff_anw.py	1;"	kind:file	line:1
+bffs	../2016/Round_1A/C-BFFs/bff_anw.py	/^def bffs():$/;"	kind:function	line:65
+binTree2.py	../2017/qualification/bathroom/binTree2.py	1;"	kind:file	line:1
+binaryTree.py	../2017/qualification/bathroom/binaryTree.py	1;"	kind:file	line:1
+c.py	../2017/Round_1A/C/c.py	1;"	kind:file	line:1
+c_sol.py	../2017/Round_1A/C/c_sol.py	1;"	kind:file	line:1
+change_baixo	../2017/Round_1A/A/a.py	/^def change_baixo(matriz, char, r, c):$/;"	kind:function	line:30
+change_cima	../2017/Round_1A/A/a.py	/^def change_cima(matriz, char, r, c):$/;"	kind:function	line:24
+change_direita	../2017/Round_1A/A/a.py	/^def change_direita(matriz, char, r, c):$/;"	kind:function	line:12
+change_esquerda	../2017/Round_1A/A/a.py	/^def change_esquerda(matriz, char, r, c):$/;"	kind:function	line:18
+change_matriz	../2017/Round_1A/A/a.py	/^def change_matriz(matriz, vlr):$/;"	kind:function	line:36
+check_pak	../2017/Round_1A/B/b.py	/^def check_pak(pak, lim):$/;"	kind:function	line:7
+children_count	../2017/qualification/bathroom/binTree2.py	/^    def children_count(self):$/;"	kind:member	line:47
+cnt	../2017/Round_1A/B/b_sol.py	/^    cnt = 0$/;"	kind:variable	line:23
+cnt	../2017/Round_1A/B/b_sol_bak.py	/^    cnt = 0$/;"	kind:variable	line:23
+compra	../2017/Round_1A/B/b_sol.py	/^    compra = []$/;"	kind:variable	line:6
+compute	../2016/Round_1A/C-BFFs/bff_anw.py	/^def compute(N, F, visited, longest_len_from_kid, first_kid_in_a_circle_from_kid):$/;"	kind:function	line:15
+compute2	../2016/Round_1A/C-BFFs/bff_anw.py	/^def compute2(N, F, visited, longest_len_from_kid, first_kid_in_a_circle_from_kid):$/;"	kind:function	line:54
+contain	../2017/Round_1A/A/a.py	/^def contain(matriz, char):$/;"	kind:function	line:1
+correct	../2017/qualification/tidy/tidy_numbers.py	/^def correct(n):$/;"	kind:function	line:4
+counts	../2017/Round_1A/B/b_sol.py	/^    counts = [[] for _ in range(num_ingreds)]$/;"	kind:variable	line:24
+counts	../2017/Round_1A/B/b_sol_bak.py	/^    counts = [[] for _ in range(n)]$/;"	kind:variable	line:24
+delete	../2017/qualification/bathroom/binTree2.py	/^    def delete(self, data):$/;"	kind:member	line:70
+descendant_count	../2017/qualification/bathroom/binTree2.py	/^    def descendant_count(self):$/;"	kind:member	line:59
+down	../2017/Round_1A/B/b_sol.py	/^            down = (10 * units + 11 * rec - 1) \/\/ (11 * rec)$/;"	kind:variable	line:16
+down	../2017/Round_1A/B/b_sol_bak.py	/^            down = (10 * u + 11 * req - 1) \/\/ (11 * req)$/;"	kind:variable	line:16
+events	../2017/Round_1A/B/b_sol_bak.py	/^    events = []$/;"	kind:variable	line:10
+fashion-show.py	../2017/qualification/solution/python-kamyu104/fashion-show.py	1;"	kind:file	line:1
+fashion_show	../2017/qualification/solution/python-kamyu104/fashion-show.py	/^def fashion_show():$/;"	kind:function	line:11
+find_pares	../2016/Round_1A/C-BFFs/bff.py	/^def find_pares(bff):$/;"	kind:function	line:1
+flip	../2017/qualification/pankake/pankake.py	/^def flip(row, flipperSize, idx):$/;"	kind:function	line:1
+flip	../2017/qualification/solution/python-kamyu104/pancake-flipper.py	/^def flip(stack, i, j):$/;"	kind:function	line:11
+flipElement	../2017/qualification/pankake/pankake.py	/^def flipElement(actual):$/;"	kind:function	line:5
+flipperSize	../2017/qualification/pankake/pankake.py	/^  flipperSize = int(flipperSize)$/;"	kind:variable	line:42
+hasElement	../2017/Round_1A/B/b.py	/^def hasElement(listOfList, element):$/;"	kind:function	line:57
+inOrderTranversal	../2017/qualification/bathroom/binaryTree.py	/^    def inOrderTranversal(self, root):$/;"	kind:member	line:42
+inorder_print	../2017/qualification/bathroom/binTree2.py	/^    def inorder_print(self):$/;"	kind:member	line:107
+input	../2017/Round_1A/C/c_sol.py	/^input = raw_input$/;"	kind:variable	line:2
+insert	../2017/qualification/bathroom/binTree2.py	/^    def insert(self, data):$/;"	kind:member	line:13
+insert_node	../2017/qualification/bathroom/binaryTree.py	/^    def insert_node(self,root,element):$/;"	kind:member	line:13
+last	../2017/Round_1A/A/a_sol.py	/^        last = ls$/;"	kind:variable	line:18
+last	../2017/Round_1A/A/a_sol.py	/^    last = ll[z]$/;"	kind:variable	line:12
+lastWord.py	../2016/Round_1A/A-LastWord/lastWord.py	1;"	kind:file	line:1
+last_was_heal	../2017/Round_1A/C/c_sol.py	/^                last_was_heal = False$/;"	kind:variable	line:63
+last_was_heal	../2017/Round_1A/C/c_sol.py	/^                last_was_heal = True$/;"	kind:variable	line:55
+last_was_heal	../2017/Round_1A/C/c_sol.py	/^        last_was_heal = False$/;"	kind:variable	line:41
+lastu	../2017/Round_1A/C/c_sol.py	/^            lastu = u$/;"	kind:variable	line:67
+lastu	../2017/Round_1A/C/c_sol.py	/^        lastu = -1$/;"	kind:variable	line:43
+lc	../2017/Round_1A/A/a_sol.py	/^                lc = cc$/;"	kind:variable	line:28
+lc	../2017/Round_1A/A/a_sol.py	/^        lc = ls[y]$/;"	kind:variable	line:21
+listToInt	../2017/qualification/tidy/tidy_numbers.py	/^def listToInt(numList):$/;"	kind:function	line:1
+ll	../2017/Round_1A/A/a_sol.py	/^    ll = []$/;"	kind:variable	line:6
+longest	../2016/Round_1A/C-BFFs/bff.py	/^def longest(bff, i, pares):$/;"	kind:function	line:41
+longestEnd	../2016/Round_1A/C-BFFs/bff.py	/^def longestEnd(bff, i, visited, rtn):$/;"	kind:function	line:20
+lookup	../2017/qualification/bathroom/binTree2.py	/^    def lookup(self, data, parent=None):$/;"	kind:member	line:29
+ls	../2017/Round_1A/A/a_sol.py	/^            ls = last$/;"	kind:variable	line:15
+ls	../2017/Round_1A/A/a_sol.py	/^            ls = ll[i]$/;"	kind:variable	line:17
+max_min	../2017/qualification/solution/python-kamyu104/bathroom-stalls.py	/^def max_min(n):$/;"	kind:function	line:11
+max_min	../2017/qualification/solution/python-kamyu104/bathroom-stalls.py	/^def max_min(n):$/;"	kind:function	line:20
+min_max_servings	../2017/Round_1A/B/b.py	/^def min_max_servings(pak, lim):$/;"	kind:function	line:47
+minturn	../2017/Round_1A/C/c_sol.py	/^                minturn = min(minturn, z + (Hi - 1) \/\/ Ak + w + (w + u - 2) \/\/ u)$/;"	kind:variable	line:50
+minturn	../2017/Round_1A/C/c_sol.py	/^                minturn = min(minturn, z + ab)$/;"	kind:variable	line:47
+minturn	../2017/Round_1A/C/c_sol.py	/^            minturn = (Hd - 1) \/\/ Ak + w + (w + u - 2) \/\/ u$/;"	kind:variable	line:36
+minturn	../2017/Round_1A/C/c_sol.py	/^            minturn = 10 ** 15$/;"	kind:variable	line:33
+minturn	../2017/Round_1A/C/c_sol.py	/^            minturn = min(minturn, z + ab)$/;"	kind:variable	line:69
+minturn	../2017/Round_1A/C/c_sol.py	/^        minturn = 10 ** 15$/;"	kind:variable	line:38
+minturn	../2017/Round_1A/C/c_sol.py	/^        minturn = ab$/;"	kind:variable	line:29
+minturn	../2017/Round_1A/C/c_sol.py	/^    minturn = 10 ** 15$/;"	kind:variable	line:27
+n	../2017/qualification/tidy/tidy_numbers.py	/^  n = correct(n)$/;"	kind:variable	line:37
+n	../2017/qualification/tidy/tidy_numbers.py	/^  n = int(input())  # read a list of integers$/;"	kind:variable	line:35
+nextlevel	../2017/qualification/bathroom/binTree2.py	/^			nextlevel = list()$/;"	kind:variable	line:120
+oversized_pancake_flipper	../2017/qualification/solution/python-kamyu104/pancake-flipper.py	/^def oversized_pancake_flipper():$/;"	kind:function	line:15
+pancake-flipper.py	../2017/qualification/solution/python-kamyu104/pancake-flipper.py	1;"	kind:file	line:1
+pankake.py	../2017/qualification/pankake/pankake.py	1;"	kind:file	line:1
+pls	../2017/Round_1A/B/b_sol_bak.py	/^    pls = []$/;"	kind:variable	line:7
+possibles_packages	../2017/Round_1A/B/b.py	/^def possibles_packages(element, lim):$/;"	kind:function	line:15
+postOrder	../2017/qualification/bathroom/binaryTree.py	/^    def postOrder(self, root):$/;"	kind:member	line:36
+print_each_level	../2017/qualification/bathroom/binTree2.py	/^    def print_each_level(self):$/;"	kind:member	line:114
+print_mat	../2017/Round_1A/A/a.py	/^def print_mat(matriz):$/;"	kind:function	line:8
+qtde_limite	../2017/Round_1A/B/b_sol.py	/^    qtde_limite = []$/;"	kind:variable	line:10
+rankFile.py	../2016/Round_1A/B-RankFile/rankFile.py	1;"	kind:file	line:1
+rec	../2017/Round_1A/B/b_sol.py	/^            rec = receita[ingrediente]$/;"	kind:variable	line:14
+receita	../2017/Round_1A/B/b_sol.py	/^    receita = list(map(int, input().split()))$/;"	kind:variable	line:5
+remv	../2017/Round_1A/B/b_sol.py	/^    remv = [0] * num_ingreds$/;"	kind:variable	line:25
+remv	../2017/Round_1A/B/b_sol_bak.py	/^    remv = [0] * n$/;"	kind:variable	line:25
+req	../2017/Round_1A/B/b_sol_bak.py	/^            req = reqs[i]$/;"	kind:variable	line:14
+reqs	../2017/Round_1A/B/b_sol_bak.py	/^    reqs = list(map(int, input().split()))$/;"	kind:variable	line:6
+resp	../2016/Round_1A/C-BFFs/bff.py	/^def resp():$/;"	kind:function	line:65
+rightWord	../2016/Round_1A/A-LastWord/lastWord.py	/^def rightWord(w):$/;"	kind:function	line:3
+root	../2017/qualification/bathroom/binTree2.py	/^root = Node(1)$/;"	kind:variable	line:147
+run	../2017/Round_1C/A/syrup.py	/^def run():$/;"	kind:function	line:8
+run	../2017/Round_1C/B/scheduler.py	/^def run():$/;"	kind:function	line:3
+run	../template.py	/^def run():$/;"	kind:function	line:2
+s	../2016/Round_1A/A-LastWord/lastWord.py	/^    s = input()$/;"	kind:variable	line:12
+scheduler.py	../2017/Round_1C/B/scheduler.py	1;"	kind:file	line:1
+set_limits	../2017/Round_1A/B/b.py	/^def set_limits(r):$/;"	kind:function	line:1
+solved	../2017/qualification/pankake/pankake.py	/^def solved(row):$/;"	kind:function	line:11
+solver	../2017/qualification/bathroom/bathroom.py	/^def solver (stalls, people):$/;"	kind:function	line:6
+syrup.py	../2017/Round_1C/A/syrup.py	1;"	kind:file	line:1
+t	../2016/Round_1A/A-LastWord/lastWord.py	/^t = int(input())$/;"	kind:variable	line:9
+t	../2016/Round_1A/B-RankFile/rankFile.py	/^t = int(input())$/;"	kind:variable	line:34
+t	../2017/qualification/tidy/tidy_numbers.py	/^t = int(input())  # read a line with a single integer$/;"	kind:variable	line:33
+tc	../2017/Round_1A/A/a_sol.py	/^tc = int(input())$/;"	kind:variable	line:1
+tc	../2017/Round_1A/B/b_sol.py	/^tc = int(input())$/;"	kind:variable	line:1
+tc	../2017/Round_1A/B/b_sol_bak.py	/^tc = int(input())$/;"	kind:variable	line:1
+tc	../2017/Round_1A/C/c_sol.py	/^tc = int(input())$/;"	kind:variable	line:4
+template.py	../template.py	1;"	kind:file	line:1
+test_case	../2017/Round_1C/A/syrup.py	/^test_case = int(input())$/;"	kind:variable	line:41
+test_case	../2017/Round_1C/B/scheduler.py	/^test_case = int(input())$/;"	kind:variable	line:9
+test_case	../template.py	/^test_case = int(input())$/;"	kind:variable	line:7
+thislevel	../2017/qualification/bathroom/binTree2.py	/^			thislevel = nextlevel$/;"	kind:variable	line:127
+thislevel	../2017/qualification/bathroom/binTree2.py	/^		thislevel = [self]$/;"	kind:variable	line:116
+tidy-numbers.py	../2017/qualification/solution/python-kamyu104/tidy-numbers.py	1;"	kind:file	line:1
+tidy_numbers	../2017/qualification/solution/python-kamyu104/tidy-numbers.py	/^def tidy_numbers():$/;"	kind:function	line:11
+tidy_numbers.py	../2017/qualification/tidy/tidy_numbers.py	1;"	kind:file	line:1
+times	../2016/Round_1A/C-BFFs/bff.py	/^times = int(input())$/;"	kind:variable	line:91
+times	../2017/Round_1A/A/a.py	/^times = int(input())$/;"	kind:variable	line:65
+times	../2017/Round_1A/B/b.py	/^times = int(input())$/;"	kind:variable	line:126
+times	../2017/Round_1A/C/c.py	/^times = int(input())$/;"	kind:variable	line:4
+times	../2017/qualification/bathroom/bathroom.py	/^times = int(input())$/;"	kind:variable	line:33
+times	../2017/qualification/pankake/pankake.py	/^times = int(input())  # read a line with a single integer$/;"	kind:variable	line:39
+tree_data	../2017/qualification/bathroom/binTree2.py	/^    def tree_data(self):$/;"	kind:member	line:130
+tt	../2017/Round_1A/A/a_sol.py	/^        tt = []$/;"	kind:variable	line:22
+tt	../2017/Round_1A/C/c_sol.py	/^                    tt = R \/\/ u$/;"	kind:variable	line:58
+u	../2017/Round_1A/B/b_sol_bak.py	/^            u = pls[i][j]$/;"	kind:variable	line:13
+u	../2017/Round_1A/C/c_sol.py	/^            u = (Hd - Ak - 1) \/\/ Ak$/;"	kind:variable	line:45
+u	../2017/Round_1A/C/c_sol.py	/^        u = (Hd - Ak - 1) \/\/ Ak$/;"	kind:variable	line:31
+units	../2017/Round_1A/B/b_sol.py	/^            units = compra[ingrediente][pacote]$/;"	kind:variable	line:13
+up	../2017/Round_1A/B/b_sol.py	/^            up = (10 * units) \/\/ (9 * rec)$/;"	kind:variable	line:15
+up	../2017/Round_1A/B/b_sol_bak.py	/^            up = (10 * u) \/\/ (9 * req)$/;"	kind:variable	line:15
+updateMaxMin	../2017/qualification/bathroom/bathroom.py	/^def updateMaxMin(max, min, bath):$/;"	kind:function	line:3
+w	../2017/Round_1A/C/c_sol.py	/^                w = ab - (Hi - 1) \/\/ Ak$/;"	kind:variable	line:49
+w	../2017/Round_1A/C/c_sol.py	/^            w = ab - (Hd - 1) \/\/ Ak$/;"	kind:variable	line:35
+y	../2017/Round_1A/A/a_sol.py	/^        y = 0$/;"	kind:variable	line:19
+z	../2017/Round_1A/A/a_sol.py	/^    z = 0$/;"	kind:variable	line:9
+z	../2017/Round_1A/C/c_sol.py	/^        z = ((B * Hk) ** 0.5 - Ad) \/\/ B$/;"	kind:variable	line:14
+z	../2017/Round_1A/C/c_sol.py	/^        z = 0$/;"	kind:variable	line:40
