@@ -1,11 +1,9 @@
-
-def run():
-    numb = int(input())
-
+def solve_it():
+    return ''
 
 
-test_case = int(input())
+t = int(input())
 
-for i in range(1, test_case + 1):
-    print('Case #' + str(i) + ': ', end='')
-    run()
+for case in range(1, t+1):
+    answer = solve_it()
+    print('Case #{}: {}'.format(case, answer))
